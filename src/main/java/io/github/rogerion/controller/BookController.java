@@ -14,11 +14,13 @@ public class BookController {
 
 	@ApiOperation(value="Return an example Hello World")
 	@ApiResponses(value= {
-			@ApiResponse(code=200, message= "Sucess method return")
+			@ApiResponse(code=200, message= "Success method return")
 	})
 	@GetMapping
 	public String hello() {
+
 		return "Hello from bookstore manager";
+
 	}
 	
 }
