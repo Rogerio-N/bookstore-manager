@@ -1,13 +1,14 @@
 package io.github.rogerion.publisher.entity;
 
 import io.github.rogerion.books.entity.Book;
+import io.github.rogerion.entity.Auditable;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-public class Publisher {
+public class Publisher extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

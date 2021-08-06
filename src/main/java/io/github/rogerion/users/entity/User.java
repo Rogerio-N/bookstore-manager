@@ -1,6 +1,7 @@
 package io.github.rogerion.users.entity;
 
 import io.github.rogerion.books.entity.Book;
+import io.github.rogerion.entity.Auditable;
 import io.github.rogerion.users.enums.Gender;
 import lombok.Data;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class User {
+public class User extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

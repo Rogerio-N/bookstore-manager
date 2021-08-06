@@ -1,6 +1,7 @@
 package io.github.rogerion.books.entity;
 
 import io.github.rogerion.author.entity.Author;
+import io.github.rogerion.entity.Auditable;
 import io.github.rogerion.publisher.entity.Publisher;
 import io.github.rogerion.users.entity.User;
 import lombok.Data;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Book {
+public class Book extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
